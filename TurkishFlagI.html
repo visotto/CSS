@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+body {
+  background-color: #E30917;
+}
+
+/* CÍRCULO PRINCIPAL */
+.turquia {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  position: absolute;
+  left: 200px;
+  top: 150px;
+}
+
+/* CÍRCULO INTERNO */
+.turquia:before {
+  background-color: #E30917;
+  content: '';
+  width: 245px;
+  height: 245px;
+  border-radius: 150px;
+  position: absolute;
+  left: 68px;
+  top: 27px;
+}
+
+/* ESTRELA */
+.turquia:after {
+  color: white;
+  content: '\2605'; /* \2605 = &#9733; = ★ */
+  font-size: 140px;
+  position: absolute;
+  left: 280px;
+  top: 38px;
+  -webkit-transform: rotate(-19deg);
+  -moz-transform: rotate(-19deg);
+  -ms-transform: rotate(-19deg);
+  -o-transform: rotate(-19deg);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="turquia"></div>
+
+</body>
+
+</html>

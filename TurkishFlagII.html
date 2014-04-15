@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+body {
+  background-color: #E30917;
+}
+
+/* CÍRCULO PRINCIPAL */
+.turquia {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  position: absolute;
+  left: 200px;
+  top: 150px;
+}
+
+/* CÍRCULO INTERNO */
+.turquia:before {
+  background-color: #E30917;
+  content: "";
+  width: 245px;
+  height: 245px;
+  border-radius: 150px;
+  position: absolute;
+  left: 68px;
+  top: 27px;
+}
+
+.turquia:after {}
+
+.estrela {
+  margin: 273px 466px;
+  position: relative;
+  display: block;
+  color: white;
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid white;
+  border-right: 80px solid transparent;
+  border-left: 80px solid transparent;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+}
+
+.estrela:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -50px;
+  top: -45px;
+  border-bottom: 80px solid white;
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+}
+
+.estrela:after {
+  color: white;
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  left: -85px;
+  top: 3px;
+  border-bottom: 50px solid white;
+  border-right: 80px solid transparent;
+  border-left: 80px solid transparent;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="turquia"></div>
+<div class="estrela"></div>
+
+</body>
+
+</html>

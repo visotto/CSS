@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+
+    body {
+      background-color: #F5F5F5;
+    }
+
+    /* TRIÂNGULO */
+    .cone {
+      width: 0;
+      height: 0;
+      border-left: 120px solid transparent;
+      border-right: 120px solid transparent;
+      border-bottom: 280px solid #F7B137;
+      position: absolute;
+      left: 450px;
+      top: 100px;
+    }
+
+    /* OVAL */
+    .cone:before {
+      background-color: #F7B137;
+      content: '';
+      width: 240px;
+      height: 120px;
+      border-radius: 120px / 60px;
+      position: absolute;
+      margin-left: -120px;
+      margin-top: 225px;
+    }
+
+    /* BASE */
+    .cone:after {
+      background-color: #E6A433;
+      content: '';
+      width: 255px;
+      height: 255px;
+      border-radius: 20px;
+      position: absolute;
+      z-index: -1;
+      margin-left: -127px;
+      margin-top: 145px;
+      float: left;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      box-shadow: 3px 3px 0px 2px #AD7C25;
+      -webkit-box-shadow: 3px 3px 0px 2px #AD7C25;
+    }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="cone"></div>
+
+  </body>
+
+</html>
